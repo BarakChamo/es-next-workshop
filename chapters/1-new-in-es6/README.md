@@ -3,29 +3,35 @@
 ### `const` and `let`
 **MDN Documnetation on [`let`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) and [`const`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const)**
 
-`let` and `const` replace `var` from older versions of JavaScript
+`let` and `const` replace `var` from older versions of JavaScript.
 
-### Excercise
+There are a few subtle differences between `let` and `var`.
 
-Implement a string templating tag function that will format JavaScript `Date` instanctes in a template literal.
+##### 1. `let` is not hoisted
 
-Here's an example code template, fill in the function and log the templated string
+##### 1. `let` cannot be re-declared in the same scope
+
+##### 2. `let` has block scope
 ```javascript
- /*
-  Date Formatting excercise
- */
- 
- const name = 'YOUR_NAME'
- const date = new Date()
+function varTest() {
+  var x = 1;
+  if (true) {
+    var x = 2;  // same variable!
+    console.log(x);  // 2
+  }
+  console.log(x);  // 2
+}
 
- function dateFormat(strings, ...keys){
-   // format the dates
-   // and return the new string
- }
- 
- console.log(/*...*/)
- 
- //>> Should print Hello {NAME}, Today's date is 6/22/2016
- ```
- 
- For the complete reference solution, [click here](https://github.com/BarakChamo/es-next-workshop/edit/master/chapters/2-template-strings/solution.md)
+function letTest() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // different variable
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}
+```
+
+
+### *speard*, *rest* and *default*
+**MDN Documnetation on [rest](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/rest_parameters), [spread](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) and [default arguments](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)**
