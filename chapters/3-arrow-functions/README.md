@@ -96,7 +96,7 @@ d.getTimeInFuture(time => console.log(time), 1000, 2000, 3000, 4000 /* 5000, 600
 ```
 
 Hints:
-1. Try using arrow functions to bind to the `Date`'s context
-2. Try using `rest` arguments
+- 1. Try using arrow functions to bind to the `Date`'s context
+- 2. Try using `rest` arguments
 
 For the complete reference solution, [click here](https://github.com/BarakChamo/es-next-workshop/edit/master/chapters/3-arrow-functions/solution.md)
