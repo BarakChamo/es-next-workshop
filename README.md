@@ -21,12 +21,11 @@ To follow along and write ES Next code, go to the [Babel online REPL](https://ba
 It will allow to write ES6 and 7 in the browser and provide you with the compiled ES5 output and console preview.
 
 ###Workshop Chapters:
-- 1
-- 2
-- 3
-- 4
-- 5
-- 6
-- 7
-- 8
-- 9
+1. [New in ES6](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/1-new-in-es6)
+2. [Template Strings](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/2-template-strings)
+3. [Arrow Functions](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/3-arrow-functions)
+4. [Classes](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/4-classes)
+5. [Promises and Async](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/5-promises)
+6. [Generators](https://github.com/BarakChamo/es-next-workshop/tree/master/chapters/6-generators)
+
+
