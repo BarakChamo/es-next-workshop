@@ -88,3 +88,90 @@ function hello(name='world'){
 
 hello()
 ```
+
+
+### Destructuring assignments
+**MDN Documnetation on [destructuring assignments](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)**
+
+Destructuring assignments allow us to extract value out of containing types such as Objects and Arrays.
+
+##### Extracting values from arrays
+```javascript
+var x = [1, 2, 3, 4, 5];
+var [y, z] = x;
+console.log(y); // 1
+console.log(z); // 2
+```
+
+<br/>
+##### We can also extract values out of returned values
+```javascript
+function f() {
+  return [1, 2];
+}
+
+var a, b; 
+[a, b] = f(); 
+console.log(a); // 1
+console.log(b); // 2
+```
+
+<br/>
+##### And we can also extract values by key from objects
+```javascript
+var o = {p: 42, q: true};
+var {p, q} = o;
+
+console.log(p); // 42
+console.log(q); // true
+```
+
+<br/>
+And also re-assign into new variable names.
+```javascript
+var o = {p: 42, q: true};
+var {p: foo, q: bar} = o;
+ 
+console.log(foo); // 42 
+console.log(bar); // true  
+```
+
+
+### Computed property names
+**MDN Documnetation on [ES6 Object Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)**
+
+Another ES6 feature is computed key names in object declaration.
+
+Assigning key programatically can now be part of the object literal's declaration
+
+For examples:
+```javascript
+// Computed property names (ES6)
+var i = 0;
+var a = {
+  ["foo" + ++i]: i,
+  ["foo" + ++i]: i,
+  ["foo" + ++i]: i
+};
+
+console.log(a.foo1); // 1
+console.log(a.foo2); // 2
+console.log(a.foo3); // 3
+
+var param = 'size';
+var config = {
+  [param]: 12,
+  ["mobile" + param.charAt(0).toUpperCase() + param.slice(1)]: 4
+};
+
+console.log(config); // { size: 12, mobileSize: 4 }
+```
+
+Combined with destructuring assignments we can have very powerful declarations and extractions:
+
+```javascript
+let key = "z";
+let { [key]: foo } = { z: "bar" };
+
+console.log(foo); // "bar"
+```
