@@ -5,6 +5,8 @@
 
 `let` and `const` replace `var` from older versions of JavaScript.
 
+`let` assignments can be re-assigned and `const` is used for read-only, single-assignment values.
+
 There are a few subtle differences between `let` and `var`.
 
 ##### 1. `let` is not hoisted
