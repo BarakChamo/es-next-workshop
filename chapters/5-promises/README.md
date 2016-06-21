@@ -153,6 +153,12 @@ Then, call `promiseEvenOrBust` with `even` and `odd` valued and handle the retur
 
 Complete this reference implementation
 ```javascript
+ function evenOrBust(number, callback){
+   if(number % 2) return callback(new Error('Bust!'), null)
+
+   callback(null,  number)
+ }
+ 
 function promiseEventOrBust(value){
   //  return a promise
  }
