@@ -125,3 +125,5 @@ tourist.talk()
 // >> I'm in New York
 // >> I'm from London
 ```
+
+For the complete reference solution, [click here](https://github.com/BarakChamo/es-next-workshop/edit/master/chapters/4-classes/solution.md)
