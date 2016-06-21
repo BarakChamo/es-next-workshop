@@ -2,7 +2,10 @@
 
 [**MDN Documnetation on Template Strings**](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Template_literals)
 
+Template literlas, or template strings, are new JavaScript string literals that enable inline embedding of expressions.
+These expressions are evaluated in the context of the literal's declaration and provide a much more elegant form of string manipulation than the concatentaion way we're used to with ES5.
 
+#####For example
 
 ### Excercise
 
