@@ -88,7 +88,9 @@ const d = new Date()
 
 console.log(d.getTimeNow())
 
-  Date.prototype.getTimeInFuture = function(){ /**/ }
+  Date.prototype.getTimeInFuture = function(){ 
+    setTimeout(/**/)
+  }
 
 var d = new Date()
 
